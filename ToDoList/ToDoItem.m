@@ -17,4 +17,25 @@
     return item;
 }
 
+- (id) initWithCoder:(NSCoder *)coder
+{
+    self = [super init];
+    if (self != nil) {
+        self.itemName = [coder decodeObjectForKey:@"itemName"];
+        self.completed = [coder decodeBoolForKey:@"completed"];
+        self.createdAt = [coder decodeObjectForKey:@"createdAt"];
+    }
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)coder
+{
+    [coder encodeObject:self.itemName forKey:@"itemName"];
+    [coder encodeBool:self.completed forKey:@"completed"];
+    [coder encodeObject:self.createdAt forKey:@"createdAt"];
+    
+}
+
+
+
 @end

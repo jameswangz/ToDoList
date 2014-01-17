@@ -34,13 +34,17 @@
 
 - (NSMutableArray *) load
 {
-    NSArray *items = [[NSUserDefaults standardUserDefaults] arrayForKey:USER_DEFAULTS_TODO_ITEMS];
+    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_TODO_ITEMS];
+    if (data == nil) {
+        return [NSMutableArray new];
+    }
+    NSArray *items = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     return [NSMutableArray arrayWithArray:items];
 }
 
 - (void) persistentItems:(NSArray *)items
 {
-    [[NSUserDefaults standardUserDefaults] setObject:items forKey:USER_DEFAULTS_TODO_ITEMS];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:items] forKey:USER_DEFAULTS_TODO_ITEMS];
 }
 
 - (void)didReceiveMemoryWarning

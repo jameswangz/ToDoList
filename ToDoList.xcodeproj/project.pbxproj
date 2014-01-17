@@ -24,8 +24,7 @@
 		1A64F5A31887DA7C0007D8EE /* ToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F5A21887DA7C0007D8EE /* ToDoListViewController.m */; };
 		1A64F5A71887E36E0007D8EE /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F5A61887E36E0007D8EE /* ToDoItem.m */; };
 		1A64F5A81887E36E0007D8EE /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F5A61887E36E0007D8EE /* ToDoItem.m */; };
-		1A64F5AA1887FF1B0007D8EE /* todolist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A64F5A91887FF1B0007D8EE /* todolist.jpg */; };
-		1A64F5AB1887FF1B0007D8EE /* todolist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A64F5A91887FF1B0007D8EE /* todolist.jpg */; };
+		1AA727F51888D842003AB05E /* todolist_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA727F41888D842003AB05E /* todolist_256.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,7 @@
 		1A64F5A21887DA7C0007D8EE /* ToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListViewController.m; sourceTree = "<group>"; };
 		1A64F5A51887E36E0007D8EE /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		1A64F5A61887E36E0007D8EE /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
-		1A64F5A91887FF1B0007D8EE /* todolist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = todolist.jpg; sourceTree = "<group>"; };
+		1AA727F41888D842003AB05E /* todolist_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todolist_256.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +138,7 @@
 		1A173C851886CDB90026D051 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A64F5A91887FF1B0007D8EE /* todolist.jpg */,
+				1AA727F41888D842003AB05E /* todolist_256.png */,
 				1A173C861886CDB90026D051 /* ToDoList-Info.plist */,
 				1A173C871886CDB90026D051 /* InfoPlist.strings */,
 				1A173C8A1886CDB90026D051 /* main.m */,
@@ -250,8 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA727F51888D842003AB05E /* todolist_256.png in Resources */,
 				1A173CAE1886CEEC0026D051 /* Main.storyboard in Resources */,
-				1A64F5AA1887FF1B0007D8EE /* todolist.jpg in Resources */,
 				1A173C891886CDB90026D051 /* InfoPlist.strings in Resources */,
 				1A173C911886CDB90026D051 /* Images.xcassets in Resources */,
 			);
@@ -262,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A173CA21886CDB90026D051 /* InfoPlist.strings in Resources */,
-				1A64F5AB1887FF1B0007D8EE /* todolist.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
